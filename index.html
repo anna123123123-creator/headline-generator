@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>标题文案生成器 · Headline Generator</title>
+<meta name="description" content="免费开源、纯浏览器运行的标题文案生成器，填关键词和卖点，套用20多种营销文案模板批量生成标题，一键复制。不联网、不用AI接口。">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <h1>标题<span class="accent">文案</span>生成器</h1>
+    <p class="tagline">填关键词和核心卖点，套用 20 多种营销文案模板，一次生成一批标题草稿，点击即可复制。基于模板规则，不是 AI 创作。</p>
+  </header>
+
+  <main class="layout">
+    <section class="controls">
+      <div class="field">
+        <label>产品 / 主题词</label>
+        <input id="kwInput" type="text" value="AI 短剧生成源码" placeholder="比如：AI 短剧生成源码">
+      </div>
+      <div class="field">
+        <label>核心卖点 / 收益</label>
+        <input id="benefitInput" type="text" value="一句话生成一整部短剧" placeholder="比如：一句话生成一整部短剧">
+      </div>
+      <div class="field">
+        <label>目标痛点（可选）</label>
+        <input id="painInput" type="text" value="剧本写不出来、剪辑太耗时" placeholder="比如：剪辑太耗时">
+      </div>
+      <button id="btnGenerate" class="btn btn-primary">生成一批标题 →</button>
+    </section>
+
+    <section class="result-wrap">
+      <div id="resultList" class="result-list"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>MIT 协议开源，纯前端模板填空，不联网、不调用任何 AI 接口。</p>
+    <p>想要 AI 真正理解语境生成文案、长文创作、多风格改写、SEO 优化？<a href="https://inzyxuashop.com/aixiezuo-yuanma.html" target="_blank" rel="noopener">看看完整版 AI 写作源码 →</a></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
